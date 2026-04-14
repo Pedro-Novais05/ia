@@ -6,6 +6,7 @@
 
 :root{
   --bg-background: #0A1128;
+  scroll-behavior: smooth;
 }
 #page{
   box-sizing: border-box;
@@ -27,31 +28,41 @@
   width: 100%;
   background-color:   var(--bg-background);
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   justify-content: center;
   color: white;
-  align-items: center;
-  height: 110px;
+  min-height: 90px;
   display: flex;
-  flex-direction: row;
-   }
+  }
   .navigation{
     font-family:"Montserrat", sans-serif;
     font-size: 20px;
     display: flex;
-    position: fixed;
-   gap: 15px;
-    justify-content: space-around;
+    justify-content: center;
+      }
+      .navigation img{
+      height: 30px;
+      width: auto;
+      }
+    .navigation li{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
     }
-  
+
 .navigation ul{
-  align-items: center;
-  backdrop-filter: blur(10px);
   display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
-  inset: 1px;
-  gap: 100px;
-     }
+  column-gap: 60px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+   }
  
 ul li a{
    text-decoration: none;
@@ -61,18 +72,17 @@ ul li a{
   border-radius: 20px;
   justify-content: space-around;
   padding: 10px;
-    }
+  }
 
   ul li a:hover{
     background-color: rgba(100, 100, 104, 0.8);
     transition: 0.3s;
     }
-   
 
   .navigation h1{
     text-align: center;
      font-style: italic;
-}
+    }
 
 #IA{
   text-align: center;
@@ -170,12 +180,19 @@ bottom: 10px;
 
 .conteudo{
 line-height: 150%;
-margin: 150px auto;
 text-align: justify;
 }
 
-#IN{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.conteudo h2{
+  padding: 100px 0 10px 0;
+  font-family: "Montserrat", sans-serif;;
+  font-style: italic;
+ 
 }
+
+.conteudo h3{
+  padding-top: 5px;
+  font-style: italic;
+}
+
+
