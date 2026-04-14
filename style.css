@@ -178,6 +178,11 @@ position: absolute;
 bottom: 10px;
  }
 
+ .box a:hover{
+  color: #5697a5;
+  transition: 0.3s;
+ }
+
 .conteudo{
 line-height: 150%;
 text-align: justify;
